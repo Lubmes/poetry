@@ -1,0 +1,13 @@
+nl:
+  "true": Ja
+  "false": Nee
+
+  activerecord:
+    models:
+      poem:
+        one: gedicht
+        other: gedichten
+    attributes:
+      poem:
+        title: Titel
+        content: Inhoud

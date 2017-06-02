@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th><%= Poem.human_attribute_name(:title) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,9 +14,9 @@
     <% @poems.each do |poem| %>
       <tr>
         <td><%= poem.title %></td>
-        <td><%= link_to 'Show', poem %></td>
-        <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
-        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Toon', poem %></td>
+        <td><%= link_to 'Bijwerken', edit_poem_path(poem) %></td>
+        <td><%= link_to 'Verwijderen', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Poem', new_poem_path %>
+<%= link_to 'Nieuw gedicht', new_poem_path %>
