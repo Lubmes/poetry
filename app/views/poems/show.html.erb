@@ -7,7 +7,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @poem.content %>
+  <%= markdown(@poem.content) %>
 </p>
 
 <%= link_to 'Edit', edit_poem_path(@poem) %> |
